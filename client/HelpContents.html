@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Written by Taylor Wilson for CS 3500, Fall 2013 -->
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="HelpIcon.png" /> 
+		<title>Help Documentation for the team SKYNTAX Spreadsheet GUI</title>
+	</head>
+	<body>
+	<img src="HelpHeader.jpg" alt="Header Image">
+	<HR size="6" color="orange">
+		<blockquote>
+		<p align="right">
+       <a href="#Server">Connect to Server</a>     &nbsp &nbsp &nbsp
+		   <a href="#Shortcuts">Keyboard Shortcuts</a>			&nbsp &nbsp &nbsp
+		   <a href="#Safety">Safety Checks</a>					&nbsp &nbsp &nbsp
+		   <a href="#Features">Additional Features</a>
+		</p>
+	    <p></p>
+	    </blockquote>
+		<blockquote>   
+  		<a id="Server"><p></br><b>Connect to Server</b></p></a>
+      <p></p>
+      <p>To open a file from the server, you may select File > Connect to Server.</p>
+      <p><img src="connect.jpg" alt="Form Window - Connect to Server"></p></br>
+      
+      <p>This will prompt a window to input a hostname (or IP address) and a port number for the server you wish to connect to.</p>     
+      <p><img src="hostPort.jpg" alt="Form Window - Host and Port"></p></br>
+      
+      <p>You will then be prompted with a form to enter the password for the server you are connecting to. 
+               The password for our server is "Skyntax".</p>
+      <p><img src="password.jpg" alt="Form Window - Server Password"></p></br>
+      
+      <p>You may then select an existing file or create a new file to beging editing a spreadsheet on the server.</p>
+      <p><img src="selectFile.jpg" alt="Form Window - Select a File"></p></br>
+
+      </br><HR size="6" color="orange">
+
+  		<a id="Shortcuts"><p></br><b>Keyboard Shortcuts</b></p></a>
+  		<table border="1">
+  		   <tr height="35">
+  		      <th>Instruction</th>
+  		      <th>Keyboard Shortcut</th>
+  		      <th>Instruction Description</th>
+  		   </tr>
+  		   <tr height="35">
+  		      <td width="300">&nbsp Start A New Spreadsheet</td>
+  		      <td width="150">&nbsp Ctrl + N</td>
+  		      <td width="600">&nbsp Opens A New Form Window Containing A Blank Untitled Spreadsheet.</td>
+  		   </tr>
+  		   <tr height="35">
+  		      <td>&nbsp Open a Spreadsheet From File</td>
+  		      <td>&nbsp Ctrl + O</td>
+  		      <td>&nbsp Prompts User To Select A Spreadsheet File To Open. Opens In New Form Window.</td>
+  		   </tr>
+  		   <tr height="35">
+  		      <td>&nbsp Save Current Spreadsheet To File</td>
+  		      <td>&nbsp Ctrl + S</td>
+  		      <td>&nbsp Prompts User To Input A File Name Of Which The Spreadsheet Will Be Saved.</td>
+  		   </tr>
+  		   <tr height="35">
+  		      <td>&nbsp Display Dependents</td>
+  		      <td>&nbsp Ctrl + Shift + D</td>
+  		      <td>&nbsp Opens A Message Box Displaying All Cells Dependent Of Selected Cell.</td>
+  		   </tr>
+  		   <tr height="35">
+  		      <td>&nbsp Show All Negatives</td>
+  		      <td>&nbsp Ctrl + Shift + N</td>
+  		      <td>&nbsp Opens A Message Box Displaying All Cells Whose Values Are Negative Numbers.</td>
+  		   </tr>
+  		   <tr height="35">
+  		      <td>&nbsp View Help</td>
+  		      <td>&nbsp F1</td>
+  		      <td>&nbsp Opens The Help HTML File.</td>
+  		   </tr>
+         <tr height="35">
+            <td>&nbsp Undo</td>
+            <td>&nbsp Ctrl + Z</td>
+            <td>&nbsp Undoes the most recent update. Must be connected to server for Undo.</td>
+         </tr>
+  		</table>
+  		<p></p>
+  		
+  		<img src="fileMenu.jpg" alt="Form Window - Menu Bar">
+  		<p></p>
+  		
+  		<p>The image above is a visual representation of how the Spreadsheet Form will look.
+  				Notice that the text labels in the Menu bar have underlined letters. These provide
+  				an additional mechanism for navigating through the Menu bar. Simply press the Alt key
+  				followed by the underlined letter in the Menu bar. For example, to Save the Current
+  				Spreadsheet, press [Alt + F, S] and a prompt will appear in which a file name and 
+  				location can be chosen.
+  				</br>
+  			The name of the current Spreadsheet is always visible. Notice the the title of the Form window 
+  				says "Spreadsheet - untitled". In this case, untitled is the name of the Spreadsheet.
+  				Untitled is the default name for a new spreadsheet; it signifies that the current Spreadsheet
+  				has not been saved. When the Spreadsheet is saved, its file name will be displayed in the
+  				Form's title. The full path of the current Spreadsheet is also presented in the Status Strip
+  				at the bottom of the Form window. In the image below, the Form will display the full path of the 
+  				Spreadsheet with the file name "Help_Demonstration.ss" in the Status strip.
+  				 				
+  		</p>
+  		<img src="statusStrip.jpg" alt="Form Window - Status Strip">
+  		<p></p>
+  		
+  		</br><HR size="6" color="orange">
+  		
+  		<a id="Safety"><p></br><b>Safety Features</b></p></a>
+  		<p>Before closing the Spreadsheet Form, this application performs a data integrity safety check. 
+  				If closing the Form will result in the loss of any data, the user will be prompted to Save,
+  				or continue to close without saving, or cancel the closing process of the application. 
+  				The image below illustrates the dialog that will be prompted to the user while closing an 
+  				unsaved Spreadsheet Form.
+  				</br>
+          If the client is connected to the server, the closing the Spreadsheet Form will automatically
+          send the server a DISCONNECT message.
+  		</p>
+  		<img src="safetyCheck.jpg" alt="Form Window - Safety Check">
+  		<p></p>
+  		
+  		</br><HR size="6" color="orange">
+  		<a id="Features"><p></br><b>Additional Features</b></p></a>
+  		<p> There are two functions in the Option menu: Display Dependents and Show All Negatives. These functions
+  				operate as their names suggest. Display Dependents finds all the cells in the Spreadsheet whose value
+  				are dependent, directly or indirectly, on the currently selected cell. Each cell is then displayed
+  				in a Message Box. Show all Negatives finds all the cells in the Spreadsheet whose values are 
+  				negative numbers. Each cell is then displayed in the a Message Box. The result of these two functions
+  				are represented in the two images below, respectively.
+  				</br>
+  		</p>
+  		<img src="features1.jpg" alt="Display Dependencies"></br><p></p>
+  		<img src="features2.jpg" alt="Show All Negatives">
+  		
+  		</p>
+  		<p></p>
+  		</br><HR size="6" color="orange">
+  		<p>If you have any questions that are not answered in this text, please contact team SKYNTAX. Thank you.
+  		</p>
+  		</blockquote>
+	</body>
+</html>

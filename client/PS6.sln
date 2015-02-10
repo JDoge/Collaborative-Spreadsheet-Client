@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spreadsheet", "Spreadsheet\Spreadsheet.csproj", "{1B926C12-DFA2-4B1B-B22D-E1D043916229}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6FA27442-4466-43B8-8D0F-3FF1901D4752}"
+	ProjectSection(SolutionItems) = preProject
+		connect.jpg = connect.jpg
+		features1.jpg = features1.jpg
+		features2.jpg = features2.jpg
+		fileMenu.jpg = fileMenu.jpg
+		formIcon.ico = formIcon.ico
+		Formula.dll = Formula.dll
+		Formula.XML = Formula.XML
+		HelpContents.html = HelpContents.html
+		HelpHeader.jpg = HelpHeader.jpg
+		HelpIcon.png = HelpIcon.png
+		hostPort.jpg = hostPort.jpg
+		layoutLabels.jpg = layoutLabels.jpg
+		password.jpg = password.jpg
+		safetyCheck.jpg = safetyCheck.jpg
+		selectFile.jpg = selectFile.jpg
+		SpreadsheetPanel.dll = SpreadsheetPanel.dll
+		SpreadsheetPanel.XML = SpreadsheetPanel.XML
+		SpreadsheetUtilities.dll = SpreadsheetUtilities.dll
+		SpreadsheetUtilities.pdb = SpreadsheetUtilities.pdb
+		SpreadsheetUtilities.XML = SpreadsheetUtilities.XML
+		statusStrip.jpg = statusStrip.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadsheetTests", "SpreadsheetTests\SpreadsheetTests.csproj", "{B9747226-07B6-469D-9661-5D0BA6B49476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadsheetGUI", "SpreadsheetGUI\SpreadsheetGUI.csproj", "{65E91A2B-641F-4F3D-8D98-4D8A5826D648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewControllerUITest", "ViewControllerUITest\ViewControllerUITest.csproj", "{713EB79B-E860-435F-8860-9FBDC49FC6C3}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B926C12-DFA2-4B1B-B22D-E1D043916229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B926C12-DFA2-4B1B-B22D-E1D043916229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B926C12-DFA2-4B1B-B22D-E1D043916229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B926C12-DFA2-4B1B-B22D-E1D043916229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9747226-07B6-469D-9661-5D0BA6B49476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9747226-07B6-469D-9661-5D0BA6B49476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9747226-07B6-469D-9661-5D0BA6B49476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9747226-07B6-469D-9661-5D0BA6B49476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E91A2B-641F-4F3D-8D98-4D8A5826D648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E91A2B-641F-4F3D-8D98-4D8A5826D648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E91A2B-641F-4F3D-8D98-4D8A5826D648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E91A2B-641F-4F3D-8D98-4D8A5826D648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713EB79B-E860-435F-8860-9FBDC49FC6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713EB79B-E860-435F-8860-9FBDC49FC6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713EB79B-E860-435F-8860-9FBDC49FC6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713EB79B-E860-435F-8860-9FBDC49FC6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
